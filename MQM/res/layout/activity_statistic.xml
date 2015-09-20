@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="55dp"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical"
+		        android:background="@color/blue"
+		        android:weightSum="3">
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_weight="2.5"
+		            android:src="@drawable/logo_header"
+		            android:visibility="gone"
+		            android:scaleType="fitStart"
+		            android:layout_margin="10dp"/>
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.5"
+		            android:gravity="right|center_vertical"
+		            android:orientation="horizontal"
+		            android:layout_margin="10dp">
+		            <ImageView 
+			            android:layout_width="30dp"
+			            android:layout_height="30dp"
+			            android:layout_gravity="bottom"
+			            android:src="@drawable/refresh"
+			            android:scaleType="fitEnd"
+			            android:layout_marginRight="5dp"/>
+		            <ImageView 
+			            android:layout_width="30dp"
+			            android:layout_height="30dp"
+			            android:layout_gravity="bottom"
+			            android:src="@drawable/logout"
+			            android:scaleType="fitEnd"/>
+		        </LinearLayout>
+		    </LinearLayout>
+		    
+		    <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="5dp"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:text="@string/txt_statistic"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:textColor="@android:color/white"
+			        android:background="@android:color/black"/>
+	<ScrollView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/white"
+			android:orientation="vertical" >
+		    <LinearLayout 
+		        android:id="@+id/chart" 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="250dp" 
+		        android:layout_marginTop="20dp"
+		        android:background="@android:color/white"/>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll_target" 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content" 
+		        android:layout_marginTop="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:background="@android:color/white">
+		        <TextView
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+				    android:gravity="center_vertical"
+					android:text="@string/txt_target"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@android:color/black" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+				    android:gravity="center_vertical"
+					android:layout_marginLeft="5dp"
+					android:text=" : "
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@android:color/black" />
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:weightSum="1"
+				    android:orientation="horizontal">
+					<com.smart.mqm.customview.RoundCornerProgressBar
+					    android:layout_width="fill_parent"
+					    android:layout_height="match_parent"
+					    android:layout_weight="0.8"
+					    android:layout_gravity="center_vertical"
+					    android:gravity="center_vertical"
+					    android:orientation="vertical"
+					    app:backgroundColor="@android:color/transparent"
+					    app:backgroundRadius="10dp"
+					    app:max="300"
+					    app:progress="150"
+					    app:progressColor="@color/blue" />
+					<TextView
+						android:layout_width="50dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.2"
+						android:layout_marginLeft="5dp"
+						android:layout_gravity="center_vertical"
+					    android:gravity="center_vertical"
+						android:text="150"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="@android:color/black" />
+				</LinearLayout>
+			</LinearLayout>
+			
+		    <LinearLayout 
+		        android:id="@+id/ll_actual" 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content" 
+		        android:layout_marginTop="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:background="@android:color/white">
+		        <TextView
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+				    android:gravity="center_vertical"
+					android:text="@string/txt_actual"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@android:color/black" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+				    android:gravity="center_vertical"
+					android:layout_marginLeft="5dp"
+					android:text=" : "
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@android:color/black" />
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:weightSum="1"
+				    android:orientation="horizontal">
+					<com.smart.mqm.customview.RoundCornerProgressBar
+					    android:layout_width="fill_parent"
+					    android:layout_height="match_parent"
+					    android:layout_weight="0.8"
+					    android:layout_gravity="center_vertical"
+					    android:gravity="center_vertical"
+					    android:orientation="vertical"
+					    app:backgroundColor="@android:color/transparent"
+					    app:backgroundRadius="10dp"
+					    app:max="300"
+					    app:progress="128"
+					    app:progressColor="@color/red_dark" />
+					
+					<TextView
+						android:layout_width="50dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.2"
+						android:layout_marginLeft="5dp"
+						android:layout_gravity="center_vertical"
+					    android:gravity="center_vertical"
+						android:text="128"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="@android:color/black" />
+				</LinearLayout>
+		
+			</LinearLayout>
+			
+		    <View android:layout_width="fill_parent" 
+		        android:layout_height="1dp" 
+		        android:layout_marginTop="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:background="@color/line_grey"/>
+		    
+		    <LinearLayout 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content" 
+		        android:layout_marginTop="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:background="@android:color/white">
+		        <TextView
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+				    android:gravity="center_vertical"
+					android:text="@string/txt_visit"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@android:color/black" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+				    android:gravity="center_vertical"
+					android:layout_marginLeft="5dp"
+					android:text=" : "
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@android:color/black" />
+				
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:weightSum="1"
+				    android:orientation="horizontal">
+					<com.smart.mqm.customview.RoundCornerProgressBar
+					    android:layout_width="fill_parent"
+					    android:layout_height="match_parent"
+					    android:layout_weight="0.8"
+					    android:layout_gravity="center_vertical"
+					    android:gravity="center_vertical"
+					    android:orientation="vertical"
+					    app:backgroundColor="@android:color/transparent"
+					    app:backgroundRadius="10dp"
+					    app:max="300"
+					    app:progress="300"
+					    app:progressColor="@color/green_dark" />
+					
+					<TextView
+						android:layout_width="50dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.2"
+						android:layout_marginLeft="5dp"
+						android:layout_gravity="center_vertical"
+					    android:gravity="center_vertical"
+						android:text="300"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="@android:color/black" />
+				</LinearLayout>
+		
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/blue"
+        android:weightSum="3">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:src="@drawable/logo_header"
+            android:visibility="gone"
+            android:scaleType="fitStart"
+            android:layout_margin="10dp"/>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <ImageView 
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_gravity="bottom"
+	            android:src="@drawable/refresh"
+	            android:scaleType="fitEnd"
+	            android:layout_marginRight="5dp"/>
+            <ImageView 
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_gravity="bottom"
+	            android:src="@drawable/logout"
+	            android:scaleType="fitEnd"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/txt_visit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"/>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_margin="10dp">
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_name"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_cust_name"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:text="Anka W"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_tipe_id"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <TextView 
+	            android:id="@+id/tv_tipe_id"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/spinner_holo"
+	            android:paddingLeft="10dp"
+	            android:text="Passport"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_no_id"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_no_id"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:text="S0788212"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_gender"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <TextView 
+	            android:id="@+id/tv_gender"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/spinner_holo"
+	            android:paddingLeft="10dp"
+	            android:text="Male"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_phone"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_phone"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:text="021 11223300"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_mobile"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_mobile"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:text="0881 1223344"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_email"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_email_cust"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:text="anka@smartfren.com"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_proposed_installation_date"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_install_date"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:text="27/02/2015"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_payment_method"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <TextView 
+	            android:id="@+id/tv_payment_method"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/spinner_holo"
+	            android:paddingLeft="10dp"
+	            android:text="Credit Card"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_product_selection"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_prod_select"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:hint="@string/hint_typehere"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_stb_quantity"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_stb_quantity"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:hint="@string/hint_typehere"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/txt_remarks"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/blue"/>
+	        <View android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/blue"/>
+	        <EditText 
+	            android:id="@+id/et_remarks_cust"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/edit_text_holo"
+	            android:hint="@string/hint_typehere"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"/>
+	        
+	        <LinearLayout 
+			    android:id="@+id/ll_button_submit_interested"
+			    android:layout_width="match_parent"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="20dp"
+			    android:padding="5dp"
+			    android:gravity="center"
+			    android:orientation="horizontal"
+			    android:background="@drawable/button_round_corner">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="match_parent"
+			        android:text="@string/button_submit"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:textColor="@android:color/white"
+			        android:layout_gravity="center"
+			        android:textSize="18sp"
+			        android:gravity="center"/>
+			</LinearLayout>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MQM</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- hint -->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_typehere">Type here...</string>
+    
+    
+    <!-- button text -->
+    <string name="button_login">LOGIN</string>
+    <string name="button_change_pass">CHANGE PASSWORD</string>
+    <string name="button_submit">SUBMIT</string>
+    <string name="button_homepass">HOME PASS</string>
+    <string name="button_statistic">STATISTIC</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="button_kirim">KIRIM</string>
+    <string name="button_ya">YA</string>
+    <string name="button_tidak">TIDAK</string>
+    <string name="button_interested">Interested</string>
+    <string name="button_notinterested">Not Interested</string>
+    <string name="button_skip">Skip</string>
+    
+    <!-- text -->
+    <string name="txt_visited_homepass">VISITED HOME PASS</string>
+    <string name="txt_homepass">HOME PASS</string>
+    <string name="txt_statistic">STATISTIC</string>
+    <string name="txt_visit">VISIT</string>
+    <string name="txt_profile">PROFILE</string>
+    <string name="txt_interested">Interested</string>
+    <string name="txt_notinterested">Not Interested</string>
+    <string name="txt_skip">Skip</string>
+    <string name="txt_search">Search...</string>
+    <string name="txt_confirm_location">Apakah anda sudah berada di lokasi?</string>  
+    <string name="txt_home_pass_id">Home Pass ID</string>
+    <string name="txt_ae_id">AE ID</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_customer_name">Customer Name</string>
+    <string name="txt_phone">Phone</string>
+    <string name="txt_mobile_phone">Mobile Phone</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_remarks">Remarks</string>
+    <string name="txt_photo">Photo</string>
+    <string name="txt_picture_chooser_take_picture">Take picture</string>
+    <string name="txt_picture_chooser_get_picture">Get from gallery</string>
+    <string name="txt_picture_chooser_delete_picture">Delete picture</string>
+    <string name="txt_picture_add_picture">Add</string>
+    <string name="txt_rumah_kosong">Rumah Kosong</string>
+    <string name="txt_tanah_kosong">Tanah Kosong</string>
+    <string name="txt_rumah_rusak">Rumah Rusak</string>
+    <string name="txt_lainnya">Lainnya</string>
+    <string name="txt_visit_target">Visit</string>
+    
+    <string name="txt_tipe_id">Tipe ID</string>
+    <string name="txt_no_id">No ID</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_mobile">Mobile</string>
+    <string name="txt_proposed_installation_date">Proposed Installation Date</string>
+    <string name="txt_payment_method">Payment Method</string>
+    <string name="txt_product_selection">Product Selection</string>
+    <string name="txt_stb_quantity">STB Quantity</string>
+    <string name="txt_target">Target</string>
+    <string name="txt_actual">Actual</string>
+    
+    <string name="txt_name">Name</string>
+    <string name="txt_team_leader">Team Leader</string>
+    <string name="txt_area_manager">Area Manager</string>
+    <string name="txt_branch_manager">Branch Manager</string>
+    <string name="txt_oldpass">OLD PASSWORD</string>
+    <string name="txt_newpass">NEW PASSWORD</string>
+    <string name="txt_confirmpass">CONFIRM PASSWORD</string>
+    
+    <!-- Error -->
+    <string name="err_take_photo">Error take photo</string>
+    <string name="err_not_supported">Not supported</string>
+    
+    <string name="linktxt_forgot_password">FORGOT PASSWORD ?</string>
+
+</resources>

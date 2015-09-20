@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffeb"
+    android:gravity="center_vertical|center_horizontal|center"
+    android:orientation="vertical"
+    android:minWidth="280dp"
+    android:minHeight="140dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <Button
+        android:id="@+id/btn_picture_chooser_take_picture_button"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_picture_chooser_take_picture" />
+
+    <Button
+        android:id="@+id/btn_picture_chooser_get_picture_button"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_picture_chooser_get_picture" />
+
+    <Button
+        android:id="@+id/btn_picture_chooser_delete_picture_button"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_picture_chooser_delete_picture"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
